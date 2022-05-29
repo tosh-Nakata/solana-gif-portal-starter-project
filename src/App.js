@@ -19,7 +19,7 @@ const baseAccount = web3.Keypair.fromSecretKey(secret)
 const programID = new PublicKey(idl.metadata.address);
 
 //ネットワークをdevnetに設定
-const network = clusterApiUrl("process.env.SOLANA_NETWORK");
+const network = clusterApiUrl("devnet");
 
 //トランザクションが完了した時の通知方法を制御
 const opts = {
